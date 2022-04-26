@@ -288,10 +288,14 @@ body{
 .skype a{
     text-decoration: none;
 }
+.header_a{
+    transition: all 0.2s ease;
+}
 .col1 a:hover,
 .col2 a:hover,
 .col3 a:hover,
-.col4 a:hover{
+.col4 a:hover,
+.header_a:hover{
     color: #fd8300;
     text-decoration: underline;
 }
