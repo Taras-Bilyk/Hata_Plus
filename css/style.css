@@ -3,7 +3,12 @@ body{
     margin: 0;
     font-family: 'Arial', sans-serif;
 }
-
+sup{
+    font-size: 0.7em;
+}
+hr{
+    margin-top: 35px;
+}
 .wrapper{
     max-width: 960px;
     margin: 0 auto; 
@@ -90,7 +95,7 @@ body{
 }
 .proposition p{
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
 }
 .prop-title{
     padding-top: 60px;
@@ -332,10 +337,4 @@ body{
     font-family: "Arial";
     padding-top: 15px;
     padding-bottom: 15px;
-}
-sup{
-    font-size: 0.7em;
-}
-hr{
-    margin-top: 35px;
 }
