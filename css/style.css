@@ -41,9 +41,6 @@ hr{
     color: #b1b1d2;
     text-decoration: none;
 }
-.g a{
-    margin-left: 15px;
-}
 .menu a:hover{
     color: #fd8300;
 }
@@ -163,7 +160,7 @@ hr{
 }
 .category_menu a{
     display: block;
-    padding: 13px 15px;
+    padding: 12px 15px;
     border: 1px solid #aaa;
     border-radius: 0px;
     border-top: 0;
@@ -229,6 +226,8 @@ hr{
 .houses{
     display: flex;
     justify-content: space-around;
+    margin-left: 0;
+    margin-right: 0;
 }
 .houses_title{
     margin-bottom: 10px;
