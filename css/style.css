@@ -1,5 +1,4 @@
 body{
-
     margin: 0;
     font-family: 'Arial', sans-serif;
 }
@@ -7,13 +6,14 @@ sup{
     font-size: 0.7em;
 }
 hr{
-    margin-top: 35px;
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #e4e4ec;
 }
 .wrapper{
     max-width: 960px;
     margin: 0 auto; 
 }
-
 .header{
     background-color: #1f1f56;
     padding: 20px 0;
@@ -21,8 +21,7 @@ hr{
 .header ul{
     margin: 0 -14px;
     padding-left: 0;
-    list-style: none;
-    
+    list-style: none; 
 }
 .header li{
     display: inline-block;
@@ -88,7 +87,6 @@ hr{
 }
 .proposition{
     background: #000 url(../images/background.png) center/cover;
-
 }
 .proposition p{
     margin: 0;
@@ -134,6 +132,7 @@ hr{
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
+    margin-top: 10px;
 }
 .text{
     font-size: 14px;
@@ -149,21 +148,27 @@ hr{
     font-weight: bold;
     font-family: "Arial";
 }
+.about:hover{
+    text-decoration: none;
+}
 .content_all{
     display: flex;
     justify-content: space-between;
+    padding-top: 25px;
+}
+.content{
+    max-width: 713px;
 }
 .category_menu{
-    margin-top: 15px;
-    background-color: #e4e4ec;
-    height: 50%;
+    margin-top: 0;
 }
 .category_menu a{
     display: block;
-    padding: 12px 15px;
-    border: 1px solid #aaa;
+    /*padding: 10px 15px; */
+    padding: 5px 15px;
+    border: 1px solid #cdcddd;
     border-radius: 0px;
-    border-top: 0;
+    border-bottom: 0;
     border-left: 0;
     border-right: 0;
     font-size: 14px;
@@ -182,29 +187,33 @@ hr{
 }
 .category_menu ul{
     list-style: none;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0;
+    padding: 0;
     margin-right: 0px;
     margin: 0;
+    background-color: #e4e4ec;
 }
 .category_menu p{
-    padding: 13px 15px;
+    padding: 10px 15px;
     background-color: #1f1f56;
     font-size: 16px;
     line-height: 24px;
     color: #fff;
     font-weight: 700;
     font-family: "Roboto Slab";
-    margin-bottom: 0;
-    margin-top: 0;
+    margin: 0;
+    border-radius: 3px 3px 0 0;
+}
+.category_menu nav{
+    position: sticky;
+    top: 35px;
 }
 .selected_category a{
     background-color: #fd8300;
     color: #fff;
 }
 .selected_all a{
-    padding-left: 25px;
+    border-top: 0;
+    padding-left: 30px;
     font-size: 14px;
     line-height: 24px;
     color: #666;
@@ -230,7 +239,11 @@ hr{
     margin-right: 0;
 }
 .houses_title{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin: 5px 0 0;    
+}
+.houses picture{
+    vertical-align: bottom;
 }
 .montreal{
     margin: 0 30px;
@@ -304,8 +317,8 @@ hr{
 .col2 ul,
 .col3 ul,
 .col4 ul{
-    margin-top: 40px;
-    margin-bottom: 30px;
+    padding: 30px 0 20px;
+    margin: 0;
 }
 .skype a{
     text-decoration: none;
@@ -334,6 +347,5 @@ hr{
     line-height: 18px;
     color: #9999a6;
     font-family: "Arial";
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 13.5px 0;
 }
