@@ -1,0 +1,271 @@
+body{
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+hr{
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #e4e4ec;
+}
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto; 
+}
+.header{
+    background-color: #1f1f56;
+    padding: 20px 0;
+}
+.header ul{
+    margin: 0 -14px;
+    padding-left: 0;
+    list-style: none; 
+}
+.header li{
+    display: inline-block;
+    margin: 0 14px;
+}
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu a{
+    transition: all 0.2s ease;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #b1b1d2;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: #fd8300;
+}
+.contact_info{
+    padding: 20px 0;
+    transition: all 0.2s ease;
+}
+.contact_info img{
+    margin-right: 10px;
+}
+.phones a{
+    font: bold 18px/24px 'Arial';
+
+    color: #25252c;
+    font-weight: bold;
+    text-decoration: none;
+}
+.phones p,
+.messengers p{
+    margin: 10px 0;
+}
+.messengers a{
+    font-size: 16px;
+    line-height: 24px;
+    color: #25252c;
+}
+.skype{
+    text-decoration: none;
+}
+.cta a{
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #25252c;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 2px solid #fd8300;
+    transition: all 0.25s ease;
+}
+.cta a:hover{
+    background-color: #fd8300;
+    color: #fff;
+}
+.header_a{
+    transition: all 0.2s ease;
+}
+.header_a:hover{
+    color: #fd8300;
+    text-decoration: underline;
+}
+
+main h1{
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+main p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    font-family: "Arial";
+}
+.price_a{
+    text-decoration: none;
+}
+.row1{
+    border-radius: 3px 3px 0 0;
+    background-color: #1f1f56;
+}
+.row{
+    background-color: #e4e4ec;
+}
+.row,
+.row1{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    transition: all 0.3s ease;
+}
+.row:hover{
+    background-color: #fd8300;
+}
+.row p,
+.row1 p{
+    width: 200px;
+}
+.time{
+    font-size: 13px;
+    line-height: 21px;
+    color: #666;
+    font-family: "Arial";
+}
+.pravila{
+    font-size: 14px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}
+.skype a{
+    text-decoration: none;
+}
+.header_a{
+    transition: all 0.2s ease;
+}
+.popular{
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.houses{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0;
+    margin-right: 0;
+}
+.houses_title{
+    margin-bottom: 5px;
+    margin: 5px 0 0;    
+}
+.houses picture{
+    vertical-align: bottom;
+}
+/* .montreal{
+    margin: 0 30px;
+} */
+.edmonton a,
+.montreal a,
+.calgary a,
+.richmond a{
+    font-size: 14px;
+    line-height: 24px;
+    color: #1f1f56;
+    font-weight: bold;
+    font-family: "Arial";
+    text-decoration: none;
+}
+.edmonton a:hover,
+.montreal a:hover,
+.calgary a:hover,
+.richmond a:hover{
+    text-decoration: underline;
+}
+.houses_content{
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    font-family: "Arial";
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.col1 a:hover,
+.col2 a:hover,
+.col3 a:hover,
+.col4 a:hover,
+.header_a:hover{
+    color: #fd8300;
+    text-decoration: underline;
+}
+.footer_all{
+    background-color: #ededf5;
+}
+.copy{
+    background-color: #dcdce6;
+}
+.copyright{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    font-family: "Arial";
+    padding: 13.5px 0;
+}
+.cols{
+    display: flex;
+    justify-content: space-between;
+}
+.cols img{
+    margin-right: 10px;
+}
+.col1 ul,
+.col2 ul,
+.col3 ul,
+.col4 ul{
+    list-style: none;
+    padding-left: 0;
+}
+.col1 a,
+.col2 a,
+.col3 a,
+.col4 a{
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.col1 a,
+.col2 a{
+    font-size: 14px;
+    line-height: 26px;
+    color: #666;
+    font-family: "Arial";
+}
+.col3 a{
+    font-size: 18px;
+    line-height: 24px;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+}
+.col4 a{
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #25252c;
+    font-family: "Arial";
+}
+.col1 ul,
+.col2 ul,
+.col3 ul,
+.col4 ul{
+    padding: 30px 0 20px;
+    margin: 0;
+}
