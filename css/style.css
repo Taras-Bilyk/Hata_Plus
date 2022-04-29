@@ -10,6 +10,9 @@ hr{
     border: none;
     border-top: 1px solid #e4e4ec;
 }
+a{
+    position: relative;
+}
 .wrapper{
     max-width: 960px;
     margin: 0 auto; 
@@ -43,12 +46,64 @@ hr{
 .menu a:hover{
     color: #fd8300;
 }
+.social a{
+    display: block;
+    background: url(../images/sprite.png) no-repeat;
+    transition: all 0.3s ease;
+}
+a.fb{
+    width: 10px;
+    height: 19px;
+    background-position: 0 0;
+}
+a.twitter{
+    width: 18px;
+    height: 15px;
+    background-position: -33px 0;
+}
+a.instagram{
+    width: 19px;
+    height: 19px;
+    background-position: -12px 0;
+}
+a.fb:hover{
+    background-position: 0 -21px;
+}
+a.twitter:hover{
+    background-position: -33px -21px;
+}
+a.instagram:hover{
+    background-position: -12px -21px;
+}
 .contact_info{
     padding: 20px 0;
     transition: all 0.2s ease;
 }
 .contact_info img{
     margin-right: 10px;
+}
+.all_before:before{
+    content: "";
+    position: absolute;
+    background: url(../images/sprite.png) no-repeat;
+    left: -28px;
+    top: 2px;
+
+}
+.tel:before{
+    width: 16px;
+    height: 17px;
+    background-position: -53px 0;
+}
+.mail:before{
+    height: 13px;
+    width: 17px;
+    background-position: -71px 0;
+}
+.skype:before{
+    height: 19px;
+    width: 18px;
+    background-position: -90px 0;
 }
 .phones a{
     font: bold 18px/24px 'Arial';
