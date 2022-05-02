@@ -247,6 +247,21 @@ a.instagram:hover{
     background-color: #fd8300;
     color: #fff;
 }
+.menu_ul li{
+    position: relative;
+}
+.menu_:after{
+    content: "";
+    position: absolute;
+    background: url(../images/sprite>.png) no-repeat;
+    height: 11px;
+    width: 7px;
+    background-position: 0 0;
+    top: 13px;
+    right: 5px;
+    
+
+}
 .category_menu li{
     margin-top: 0;
     list-style: none;
