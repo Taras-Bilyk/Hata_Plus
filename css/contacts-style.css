@@ -224,13 +224,6 @@ a.instagram:hover{
     font-family: "Roboto Slab";
     margin-top: 0;
 }
-.inputs [value]{
-    font-size: 13px;
-    line-height: 21px;
-    color: #9999a6;
-    font-style: italic;
-    font-family: "Arial";
-}
 .inputs2 input{
     display: block;
     width: 98.2%;

@@ -259,8 +259,16 @@ a.instagram:hover{
     background-position: 0 0;
     top: 13px;
     right: 5px;
-    
-
+}
+.menu_s:after{
+    content: "";
+    position: absolute;
+    background: url(../images/sprite>.png) no-repeat;
+    height: 7px;
+    width: 11px;
+    background-position: -8px 0;
+    top: 16px;
+    right: 2px;
 }
 .category_menu li{
     margin-top: 0;
