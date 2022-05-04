@@ -8,11 +8,14 @@ hr{
     border: none;
     border-top: 1px solid #e4e4ec;
 }
+.hr{
+    margin-top: 35px;
+}
 a{
     position: relative;
 }
-.hr{
-    margin-top: 30px;
+h1{
+    margin-bottom: 22px;
 }
 .wrapper{
     max-width: 960px;
@@ -51,6 +54,18 @@ a.twitter:hover{
 }
 a.instagram:hover{
     background-position: -12px -21px;
+}
+.stick{
+    position: relative;
+}
+.stick:before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 51px;
+    background-color: #e4e4ec;
+    right: -19px;
+    top: 15px;
 }
 .header ul{
     margin: 0 -14px;
@@ -100,17 +115,8 @@ a.instagram:hover{
     line-height: 24px;
     color: #25252c;
 }
-.stick{
-    position: relative;
-}
-.stick:before{
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 51px;
-    background-color: #e4e4ec;
-    right: -19px;
-    top: 15px;
+.skype{
+    text-decoration: none;
 }
 .cta a{
     display: inline-block;
@@ -157,133 +163,102 @@ a.instagram:hover{
     width: 18px;
     background-position: -90px 0;
 }
-.skype a{
-    text-decoration: none;
-}
-.header_a{
-    transition: all 0.2s ease;
-}
-.contacts{
-    display: flex;
-    justify-content:space-between;
-}
-.contacts li{
-    list-style: none;
-}
-.contacts ul{
-    padding-left: 0;
-}
-.contacty{
+main h1{
     font-size: 24px;
     line-height: 24px;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
 }
-.contacts_title{
+main p{
     font-size: 14px;
     line-height: 24px;
-    color: #24242b;
-    font-weight: 700;
-    font-family: "Roboto Slab";
-}
-.contacts_p p,
-.contacts_p a{
-    font-size: 14px;
-    /* line-height: 21px; */
-    line-height: 14px;
     color: #666;
     font-family: "Arial";
-    text-decoration: none;
+    margin-bottom: 25px;
 }
-.contacts_tel a{
-    font-size: 18px;
-    line-height: 24px;
-    color: #25252c;
-    font-weight: bold;
-    font-family: "Arial";
-    text-decoration: none;
-}
-.contacts_mail a{
-    font-size: 16px;
-    line-height: 24px;
-    color: #25252c;
-    font-family: "Arial";
-}
-.contacts li{
-    margin-top: 14px;
-    margin-bottom: 14px;
-}
-.map_and_inputs{
-    display: flex;
-    justify-content: space-between;
-}
-.inputs{
-    width: 450px;
-}
-.inputs1{
-    display: flex;
-    justify-content: space-between;
-}
-.inputs1 input{
-    width: 47%;
-}
-.inputs p{
-    font-size: 14px;
-    line-height: 24px;
-    color: #24242b;
-    font-weight: 700;
-    font-family: "Roboto Slab";
-    margin-top: 0;
-}
-.inputs2 input{
-    display: block;
-    width: 98.2%;
-    margin-top: 10px;
-}
-.input_height{
-    height: 40px;
-}
-.checkbox_and_p{
-    display: inline;
-    margin-left: 5px;
-}
-.send{
-    font-size: 14px;
-    line-height: 24px;
-    color: #fff;
-    font-weight: bold;
-    font-family: "Arial";
-    text-align: center;
-    border-radius: 21px;
-    background-color: #fd8300;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-.textarea{
+.price{
     height: 100px;
-    width: 98.2%;
-    margin-top: 10px;
 }
-.text[placeholder]{
-    font-size: 13px;
-    line-height: 21px;
-    color: #9999a6;
-    font-style: italic;
-    font-family: "Arial";
-}
-.button_and_ckeckbutton{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.button_and_ckeckbutton p{
+.time{
     font-size: 13px;
     line-height: 21px;
     color: #666;
     font-family: "Arial";
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
+.pravila{
+    font-size: 14px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}
+.skype a{
+    text-decoration: none;
+}
+.header_a{
+    transition: all 0.2s ease;
+}
+.popular{
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.houses{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0;
+    margin-right: 0;
+}
+.houses_title{
+    margin-bottom: 5px;
+    margin: 5px 0 0;    
+}
+.houses picture{
+    vertical-align: bottom;
+}
+/* .montreal{
+    margin: 0 30px;
+} */
+figcaption{
+    position: relative;
+    margin: 0;
+}
+.a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.a:hover~h3{
+    text-decoration: underline;
+}
+.edmonton h3,
+.montreal h3,
+.calgary h3,
+.richmond h3{
+    font-size: 14px;
+    line-height: 24px;
+    color: #1f1f56;
+    font-weight: bold;
+    font-family: "Arial";
+    text-decoration: none;
+}
+
+.houses_content{
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    font-family: "Arial";
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
 .col1 a:hover,
 .col2 a:hover,
 .col3 a:hover,
@@ -349,6 +324,7 @@ a.instagram:hover{
     color: #25252c;
     font-family: "Arial";
 }
+
 .col1 ul,
 .col2 ul,
 .col3 ul,
@@ -356,6 +332,6 @@ a.instagram:hover{
     padding: 30px 0 20px;
     margin: 0;
 }
-a.skype{
+.skype a{
     text-decoration: none;
 }

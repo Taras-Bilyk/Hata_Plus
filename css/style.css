@@ -106,6 +106,18 @@ a.instagram:hover{
     height: 17px;
     background-position: -53px 0;
 }
+.stick{
+    position: relative;
+}
+.stick:before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 51px;
+    background-color: #e4e4ec;
+    right: -19px;
+    top: 15px;
+}
 .mail:before{
     height: 13px;
     width: 17px;
@@ -227,30 +239,36 @@ a.instagram:hover{
 }
 .category_menu{
     margin-top: 0;
+    min-width: 219px;
+}
+.nav{
+    border-radius: 3px;
+    overflow: hidden;
 }
 .category_menu a{
     display: block;
     /*padding: 10px 15px; */
-    padding: 5px 15px;
-    border: 1px solid #cdcddd;
-    border-radius: 0px;
-    border-bottom: 0;
-    border-left: 0;
-    border-right: 0;
+    padding: 10px 15px;
     font-size: 14px;
     line-height: 24px;
     color: #25252c; 
     text-decoration: none;
     transition: all 0.3s ease;
 }
-.category_menu>nav>ul>li>a:hover{
+.category_menu>nav>ul>li+li>a{
+    border-top: 1px solid #cdcddd;
+}
+.y{
+    border-top: 1px solid #cdcddd;
+}
+.category_menu>nav>ul>li:hover>a{
     background-color: #fd8300;
     color: #fff;
 }
-.menu_ul li{
+/* .menu_ul li{
     position: relative;
-}
-.menu_:after{
+} */
+/* .menu_:after{
     content: "";
     position: absolute;
     background: url(../images/sprite>.png) no-repeat;
@@ -259,8 +277,32 @@ a.instagram:hover{
     background-position: 0 0;
     top: 13px;
     right: 5px;
+} */
+
+.category_menu>nav>ul>li>a:before{
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transform: rotate(-45deg);
+    right: 15px;
+    top: 18px;
+    transition: all 0.2s ease;
 }
-.menu_s:after{
+.category_menu>nav>ul>li:hover>a:before{
+    transform: rotate(45deg);
+    border-color: #fff;
+    top: 16px;
+}
+.category_menu li:hover .selected_all{
+        display: block;
+}
+.selected_all{
+    display: none;
+}
+/* .menu_s:after{
     content: "";
     position: absolute;
     background: url(../images/sprite>.png) no-repeat;
@@ -268,8 +310,17 @@ a.instagram:hover{
     width: 11px;
     background-position: -8px 0;
     top: 16px;
-    right: 2px;
-}
+    right: 5px;
+} */
+/* .menu_::after{
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transform: rotate(-45deg);
+} */
 .category_menu li{
     margin-top: 0;
     list-style: none;
@@ -290,16 +341,21 @@ a.instagram:hover{
     font-weight: 700;
     font-family: "Roboto Slab";
     margin: 0;
-    border-radius: 3px 3px 0 0;
 }
 .category_menu>nav{
     position: sticky;
     top: 35px;
 }
-.selected_category a{
+.selected_category li{
     background-color: #fd8300;
     color: #fff;
 }
+/* .selected_category:hover .selected_all{
+    display: block;
+}
+.selected_all{
+    display: none;
+} */
 .selected_all>li>a{
     border-top: 0;
     padding-left: 30px;
@@ -312,6 +368,9 @@ a.instagram:hover{
     background-color: #cecedd;
     color: #666;
 }
+.selected_all>li>a{
+    background-color: #e4e4ec;
+}
 .popular{
     font-size: 24px;
     line-height: 24px;
@@ -320,6 +379,18 @@ a.instagram:hover{
     font-family: "Roboto Slab";
     margin-top: 30px;
     margin-bottom: 30px;
+}
+figcaption{
+    position: relative;
+    margin: 0;
+}
+.a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.a:hover~h3{
+    text-decoration: underline;
 }
 .houses{
     display: flex;
@@ -337,20 +408,15 @@ a.instagram:hover{
 .montreal{
     margin: 0 30px;
 }
-.edmonton a,
-.montreal a,
-.calgary a{
+.edmonton h3,
+.montreal h3,
+.calgary h3{
     font-size: 14px;
     line-height: 24px;
     color: #1f1f56;
     font-weight: bold;
     font-family: "Arial";
     text-decoration: none;
-}
-.edmonton a:hover,
-.montreal a:hover,
-.calgary a:hover{
-    text-decoration: underline;
 }
 .houses_content{
     font-size: 13px;

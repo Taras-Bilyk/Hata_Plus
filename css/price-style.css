@@ -55,6 +55,18 @@ a.twitter:hover{
 a.instagram:hover{
     background-position: -12px -21px;
 }
+.stick{
+    position: relative;
+}
+.stick:before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 51px;
+    background-color: #e4e4ec;
+    right: -19px;
+    top: 15px;
+}
 .header ul{
     margin: 0 -14px;
     padding-left: 0;
@@ -262,10 +274,22 @@ main p{
 /* .montreal{
     margin: 0 30px;
 } */
-.edmonton a,
-.montreal a,
-.calgary a,
-.richmond a{
+figcaption{
+    position: relative;
+    margin: 0;
+}
+.a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.a:hover~h3{
+    text-decoration: underline;
+}
+.edmonton h3,
+.montreal h3,
+.calgary h3,
+.richmond h3{
     font-size: 14px;
     line-height: 24px;
     color: #1f1f56;
@@ -273,12 +297,7 @@ main p{
     font-family: "Arial";
     text-decoration: none;
 }
-.edmonton a:hover,
-.montreal a:hover,
-.calgary a:hover,
-.richmond a:hover{
-    text-decoration: underline;
-}
+
 .houses_content{
     font-size: 13px;
     line-height: 18px;
@@ -359,4 +378,7 @@ main p{
 .col4 ul{
     padding: 30px 0 20px;
     margin: 0;
+}
+.skype a{
+    text-decoration: none;
 }
