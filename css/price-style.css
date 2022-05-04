@@ -8,6 +8,7 @@ hr{
     border: none;
     border-top: 1px solid #e4e4ec;
 }
+
 .hr{
     margin-top: 35px;
 }
@@ -381,4 +382,10 @@ figcaption{
 }
 .skype a{
     text-decoration: none;
+}
+.col3 li{
+    margin-bottom: 10px;
+}
+.col4 li{
+    margin-bottom: 10px;
 }

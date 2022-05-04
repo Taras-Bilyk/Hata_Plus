@@ -56,6 +56,7 @@ a{
 }
 .menu a:hover{
     color: #fd8300;
+    text-shadow: 0 0 1px #fd8300;
 }
 .social a{
     display: block;
@@ -247,7 +248,6 @@ a.instagram:hover{
 }
 .category_menu a{
     display: block;
-    /*padding: 10px 15px; */
     padding: 10px 15px;
     font-size: 14px;
     line-height: 24px;
@@ -265,19 +265,6 @@ a.instagram:hover{
     background-color: #fd8300;
     color: #fff;
 }
-/* .menu_ul li{
-    position: relative;
-} */
-/* .menu_:after{
-    content: "";
-    position: absolute;
-    background: url(../images/sprite>.png) no-repeat;
-    height: 11px;
-    width: 7px;
-    background-position: 0 0;
-    top: 13px;
-    right: 5px;
-} */
 
 .category_menu>nav>ul>li>a:before{
     content: "";
@@ -302,25 +289,7 @@ a.instagram:hover{
 .selected_all{
     display: none;
 }
-/* .menu_s:after{
-    content: "";
-    position: absolute;
-    background: url(../images/sprite>.png) no-repeat;
-    height: 7px;
-    width: 11px;
-    background-position: -8px 0;
-    top: 16px;
-    right: 5px;
-} */
-/* .menu_::after{
-    content: "";
-    position: absolute;
-    width: 7px;
-    height: 7px;
-    border-right: 2px solid #666;
-    border-bottom: 2px solid #666;
-    transform: rotate(-45deg);
-} */
+
 .category_menu li{
     margin-top: 0;
     list-style: none;
@@ -350,12 +319,7 @@ a.instagram:hover{
     background-color: #fd8300;
     color: #fff;
 }
-/* .selected_category:hover .selected_all{
-    display: block;
-}
-.selected_all{
-    display: none;
-} */
+
 .selected_all>li>a{
     border-top: 0;
     padding-left: 30px;
@@ -460,6 +424,12 @@ figcaption{
     color: #25252c;
     font-weight: bold;
     font-family: "Arial";
+}
+.col3 li{
+    margin-bottom: 10px;
+}
+.col4 li{
+    margin-bottom: 10px;
 }
 .col4 a{
     font-size: 16px;

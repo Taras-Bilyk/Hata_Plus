@@ -129,6 +129,7 @@ a.instagram:hover{
     border-radius: 25px;
     border: 2px solid #fd8300;
     transition: all 0.25s ease;
+    box-shadow: 0 5px 5px 0 #fd8300;
 }
 .cta a:hover{
     background-color: #fd8300;
@@ -334,4 +335,10 @@ figcaption{
 }
 .skype a{
     text-decoration: none;
+}
+.col3 li{
+    margin-bottom: 10px;
+}
+.col4 li{
+    margin-bottom: 10px;
 }
