@@ -187,8 +187,8 @@ a.instagram:hover{
     line-height: 24px;
     color: #fff;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 .prop-cost{
     font-size: 24px;
@@ -218,7 +218,6 @@ a.instagram:hover{
     line-height: 24px;
     color: #666;
     font-family: "Arial";
-    width: 650px;
 }
 .about{
     font-size: 14px;
