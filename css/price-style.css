@@ -11,6 +11,9 @@ hr{
 figure{
     margin: 0;
 }
+header{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
 .hr{
     margin-top: 35px;
 }
@@ -28,6 +31,7 @@ h1{
 .header{
     background-color: #1f1f56;
     padding: 20px 0;
+
 }
 .social a{
     display: block;
