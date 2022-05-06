@@ -1,0 +1,42 @@
+.table{
+
+}
+.table table{
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.table thead{
+    color: #fff;
+    background-color: #1f1f56;
+}
+.table th{
+    text-align: left;
+    padding: 13px 20px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+.table th:last-child,
+.table td:last-child{
+    text-align: right;
+}
+.table td{
+    padding: 12px 20px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    font-family: "Arial";
+    background-color: #e4e4ec;
+}
+.table tbody tr+tr{
+    border-top: 1px solid #cdcddd;
+}
+.table tbody tr:hover td{
+    background-color: #fd8300;
+    color: #fff;
+    cursor: pointer;
+}

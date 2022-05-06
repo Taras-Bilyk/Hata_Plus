@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/price-style.css">
+    <link rel="stylesheet" href="css/table_price.css">
 </head>
 <body>
-    <header class="header_all">
+    <header>
         <div class="header">
             <div class="wrapper flex-between">
                 <nav>
@@ -60,82 +61,77 @@
                 <p><a href="#">Замовити дзвінок</a></p>
             </div>
         </div>
-    
+    <hr>
     </header>
     <main>
         <div class="wrapper">
             <h1>Ціни на послуги тимчасового проживання</h1>
             <p>Кожен котедж оснащений комфортабельними меблями, супутниковим ТБ, душем, туалетом, холодильником, Wi-Fi-зоною.<br>Послуга може бути надана кожному з наших гостей, незалежно від терміну проживання в готелі та категорії обраного номера.</p>
-            <div class="price">
-                
-                <div class="row1">
-                    <p>Назва котеджу</p>
-                    <p>Загальна площа м.кв.</p>
-                    <p>Кількість кімнат</p>
-                    <p>Гараж</p>
-                    <p>Ціна</p>
-                </div>
-                <a href="#" class="price_a">
-                <div class="row">
-                    <p>Hamilton Paradise</p>
-                    <p>392</p>
-                    <p>5</p>
-                    <p>2</p>
-                    <p>45 000 $</p>
-                </div>
-                </a>
-                <a href="#" class="price_a">
-                <div class="row">
-                    <p>Montreal Hourse House</p>
-                    <p>295</p>
-                    <p>3</p>
-                    <p>1</p>
-                    <p>29 750 $</p>
-                </div>
-                </a>
-                <a href="#" class="price_a">
-                <div class="row">
-                    <p>Edmenton</p>
-                    <p>338</p>
-                    <p>2</p>
-                    <p>2</p>
-                    <p>53 200 $</p>
-                </div>
-                </a>
-                <a href="#" class="price_a">
-                <div class="row">
-                    <p>Calgary Skyliner</p>
-                    <p>249</p>
-                    <p>2</p>
-                    <p>1</p>
-                    <p>31 000 $</p>
-                </div>
-                </a>
-                <a href="#" class="price_a">
-                <div class="row">
-                    <p>Quebec Enterprices</p>
-                    <p>392</p>
-                    <p>4</p>
-                    <p>2</p>
-                    <p>110 000 $</p>
-                </div>
-                </a>
-                <a href="#" class="price_a">
-                <div class="row">
-                    <p>Alberta Maria</p>
-                    <p>349</p>
-                    <p>1</p>
-                    <p>3</p>
-                    <p>67 500 $</p>
-                </div>
-                </a>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Назва котеджу</th>
+                            <th>Загальна площа м.кв.</th>
+                            <th>Кількість кімнат</th>
+                            <th>Гараж</th>
+                            <th>Ціна</tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hamilton Paradise</td>
+                            <td>392</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>45 000 $</td>
+                        </tr>
+                        <tr>
+                            <td>Montreal Hourse House</td>
+                            <td>295</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>29 750 $</td>
+                        </tr>
+                        <tr>
+                            <td>Edmenton</td>
+                            <td>338</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>53 200 $</td>
+                        </tr>
+                        <tr>
+                            <td>Calgary Skyliner</td>
+                            <td>249</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>31 000 $</td>
+                        </tr>
+                        <tr>
+                            <td>Quebec Enterprices</td>
+                            <td>392</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>110 000 $</td>
+                        </tr>
+                        <tr>
+                            <td>Alberta Maria</td>
+                            <td>349</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>67 500 $</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <p class="time">Час заселення з 14-00, виїзд до 12-00.<br>Можлива погодинна оренда котеджу (мінімальний час оренди - 5 днів).</p>
-            <a href="#" class="pravila">Ознайомитись з правилами проживання</a>
+            <p><a href="#" class="pravila">Ознайомитись з правилами проживання</a></p>
             <hr class="hr">
             <h2 class="popular">Популярні проекти</h2>
-            <figure class="houses">
-                <figcaption class="edmonton">
+            <div class="houses">
+                
+                <figure>
+                    <figcaption class="edmonton">
                     <a href="#" class="a"></a>
                         <picture>
                             <source srcset="images/house-edmonton.webp" type="image/webp">
@@ -143,35 +139,42 @@
                         </picture>
                         <h3 class="houses_title">EDMONTON (338 м<sup>2</sup>)</h3>
                         <p class="houses_content">Загальна площа будови: 312 м<sup>2</sup><br>Кількість спалень: 4<br>Гараж: 2 авто</p>
-                </figcaption>
-                <figcaption class="montreal">
-                    <a href="#" class="a"></a>
-                    <picture>
-                        <source srcset="images/house-montreal.webp" type="image/webp">
-                        <img src="images/house-montreal.png" alt="montreal">
-                    </picture>
-                    <h3 class="houses_title">MONTREAL (332 м<sup>2</sup>)</h3>
-                    <p class="houses_content">Загальна площа будови: 290 м<sup>2</sup><br>Кількість спалень: 3<br>Гараж: 2 авто</p>
-                </figcaption>
-                <figcaption class="calgary">
-                    <a href="#" class="a"></a>
-                    <picture>
-                        <source srcset="images/house-calgary.webp" type="image/webp">
-                        <img src="images/house-calgary.png" alt="calgary">
-                    </picture>
-                    <h3 class="houses_title">CALGARY (294 м<sup>2</sup>)</h3>
-                    <p class="houses_content">Загальна площа будови: 272 м<sup>2</sup><br>Кількість спалень: 3<br>Гараж: 2 авто</p>
-                </figcaption>
-                <figcaption class="richmond">
-                    <a href="#" class="a"></a>
-                    <picture>
-                        <source srcset="images/house-richmond.webp" type="image/webp">
-                        <img src="images/house-richmond.png" alt="richmond">
-                    </picture>
-                    <h3 class="houses_title">RICHMOND (324 м<sup>2</sup>)</h3>
-                    <p class="houses_content">Загальна площа будови: 242 м<sup>2</sup><br>Кількість спалень: 3<br>Гараж: 3 авто</p>
-                </figcaption>
-            </figure>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <figcaption class="montreal">
+                        <a href="#" class="a"></a>
+                        <picture>
+                            <source srcset="images/house-montreal.webp" type="image/webp">
+                            <img src="images/house-montreal.png" alt="montreal">
+                        </picture>
+                        <h3 class="houses_title">MONTREAL (332 м<sup>2</sup>)</h3>
+                        <p class="houses_content">Загальна площа будови: 290 м<sup>2</sup><br>Кількість спалень: 3<br>Гараж: 2 авто</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <figcaption class="calgary">
+                        <a href="#" class="a"></a>
+                        <picture>
+                            <source srcset="images/house-calgary.webp" type="image/webp">
+                            <img src="images/house-calgary.png" alt="calgary">
+                        </picture>
+                        <h3 class="houses_title">CALGARY (294 м<sup>2</sup>)</h3>
+                        <p class="houses_content">Загальна площа будови: 272 м<sup>2</sup><br>Кількість спалень: 3<br>Гараж: 2 авто</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <figcaption class="richmond">
+                        <a href="#" class="a"></a>
+                        <picture>
+                            <source srcset="images/house-richmond.webp" type="image/webp">
+                            <img src="images/house-richmond.png" alt="richmond">
+                        </picture>
+                        <h3 class="houses_title">RICHMOND (324 м<sup>2</sup>)</h3>
+                        <p class="houses_content">Загальна площа будови: 242 м<sup>2</sup><br>Кількість спалень: 3<br>Гараж: 3 авто</p>
+                    </figcaption>
+                </figure>
+            </div>
         </div>
     </main>
     <footer>
