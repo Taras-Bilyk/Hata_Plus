@@ -207,7 +207,7 @@ a.instagram:hover{
 }
 .title{
     font-size: 30px;
-    line-height: 24px;
+    /* line-height: 24px; */
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -284,7 +284,7 @@ a.instagram:hover{
     top: 16px;
 }
 .category_menu li:hover .selected_all{
-        display: block;
+    display: block;
 }
 .selected_all{
     display: none;
