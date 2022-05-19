@@ -249,8 +249,16 @@ a.instagram:hover{
     display: flex;
     justify-content: space-between;
 }
+.inputs1 input,
+.inputs2 input,
+.inputs2 textarea{
+    padding-left: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 5px;
+}
 .inputs1 input{
-    width: 47%;
+    width: 49.5%;
 }
 .inputs p{
     font-size: 14px;
@@ -262,8 +270,7 @@ a.instagram:hover{
 }
 .inputs2 input{
     display: block;
-    width: 98.2%;
-    margin-top: 10px;
+    width: 100%;
 }
 .input_height{
     height: 40px;
@@ -300,9 +307,11 @@ a.instagram:hover{
 }
 .textarea{
     height: 100px;
-    width: 98.2%;
-    margin-top: 10px;
+    width: 100%;
     resize: vertical;
+    max-height: 200px;
+    min-height: 40px;
+    padding-top: 5px;
 }
 .text[placeholder]{
     font-size: 13px;
