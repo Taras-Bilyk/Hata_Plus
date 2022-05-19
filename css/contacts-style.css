@@ -271,6 +271,10 @@ a.instagram:hover{
 .checkbox_and_p{
     display: inline;
     margin-left: 5px;
+    margin-top: 12px;
+}
+.map_class iframe{
+    border: 0;
 }
 .send{
     font-size: 14px;
@@ -280,15 +284,25 @@ a.instagram:hover{
     font-family: "Arial";
     text-align: center;
     border-radius: 21px;
-    background-color: #fd8300;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 6px 20px;
+    border: 0;
+    background-color: #fff;
+    color: #000;
+    border-color: #fd8300;
+    border: 2px solid #fd8300;
+    transition: all 0.3s ease;
+}
+.send:hover{
+    cursor: pointer;
+    background-color: #fd8300;
+    color: #fff;
 }
 .textarea{
     height: 100px;
     width: 98.2%;
     margin-top: 10px;
-    
+    resize: vertical;
 }
 .text[placeholder]{
     font-size: 13px;
