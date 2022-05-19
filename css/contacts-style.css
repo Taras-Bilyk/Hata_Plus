@@ -256,6 +256,15 @@ a.instagram:hover{
     box-sizing: border-box;
     width: 100%;
     margin-top: 5px;
+    border: 1px solid #c5c5d4;
+    outline: none;
+    border-radius: 3px;
+}
+.inputs1 input:focus,
+.inputs2 input:focus,
+.inputs2 textarea:focus{
+    border-color: #fd8300;
+    box-shadow: 0 0 2px rgba(253, 131, 0, 0.5);
 }
 .inputs1 input{
     width: 49.5%;
@@ -267,6 +276,7 @@ a.instagram:hover{
     font-weight: 700;
     font-family: "Roboto Slab";
     margin-top: 0;
+    margin-bottom: 5px;
 }
 .inputs2 input{
     display: block;
@@ -282,6 +292,7 @@ a.instagram:hover{
 }
 .map_class iframe{
     border: 0;
+    margin-bottom: 35px;
 }
 .send{
     font-size: 14px;
