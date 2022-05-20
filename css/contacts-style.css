@@ -236,13 +236,6 @@ a.instagram:hover{
 .contacts li{
     margin-bottom: 10px;
 }
-.contacts a{
-    transition: all 0.3s ease;
-}
-.contacts a:hover{
-    text-decoration: underline;
-    color: #fd8300;
-}
 .map_and_inputs{
     display: flex;
     justify-content: space-between;
