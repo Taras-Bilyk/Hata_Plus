@@ -288,6 +288,7 @@ a.instagram:hover{
     position: absolute;
 }
 .checkbox_and_p+label{
+    cursor: pointer;
     padding: 0 25px;
     position: relative;
 }
