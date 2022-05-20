@@ -13,10 +13,6 @@ body{
     margin: 0;
     font-family: 'Arial', sans-serif;
 }
-body{
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-}
 hr{
     margin: 35px 0;
     margin-top: 0;
@@ -30,7 +26,7 @@ header{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .hr{
-    margin-top: 30px;
+    margin-top: 15px;
 }
 .wrapper{
     max-width: 960px;
@@ -215,7 +211,7 @@ a.instagram:hover{
 .contacts_p a{
     font-size: 14px;
     /* line-height: 21px; */
-    line-height: 14px;
+    line-height: 5px;
     color: #666;
     font-family: "Arial";
     text-decoration: none;
@@ -228,6 +224,9 @@ a.instagram:hover{
     font-family: "Arial";
     text-decoration: none;
 }
+.contacts_mail{
+    margin-bottom: 0;
+}
 .contacts_mail a{
     font-size: 16px;
     line-height: 24px;
@@ -235,8 +234,7 @@ a.instagram:hover{
     font-family: "Arial";
 }
 .contacts li{
-    margin-top: 14px;
-    margin-bottom: 14px;
+    margin-bottom: 10px;
 }
 .map_and_inputs{
     display: flex;
@@ -286,13 +284,39 @@ a.instagram:hover{
     height: 40px;
 }
 .checkbox_and_p{
-    display: inline;
-    margin-left: 5px;
-    margin-top: 12px;
+    visibility: hidden;
+    position: absolute;
+}
+.checkbox_and_p+label{
+    padding: 0 25px;
+    position: relative;
+}
+.checkbox_and_p+label:before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #c4c4d3;
+    border-radius: 3px;
+    top: 1px;
+    left: 0;
+    box-sizing: border-box;
+}
+.checkbox_and_p:checked+label:after{
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    border-right: 2px solid #1f1f56;
+    border-bottom: 2px solid #1f1f56;
+    width: 5px;
+    height: 9px;
+    left: 6px;
+    top: 4px;
+    transform: rotate(45deg)
 }
 .map_class iframe{
     border: 0;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 .send{
     font-size: 14px;
@@ -321,10 +345,10 @@ a.instagram:hover{
     width: 100%;
     resize: vertical;
     max-height: 200px;
-    min-height: 40px;
+    min-height: 121px;
     padding-top: 5px;
 }
-.text[placeholder]{
+.text{
     font-size: 13px;
     line-height: 21px;
     color: #9999a6;
@@ -334,7 +358,7 @@ a.instagram:hover{
 .button_and_ckeckbutton{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 14px;
     margin-bottom: 20px;
 }
 .button_and_ckeckbutton p{
@@ -342,6 +366,14 @@ a.instagram:hover{
     line-height: 21px;
     color: #666;
     font-family: "Arial";
+}
+.button_and_ckeckbutton div:last-child label{
+    font-size: 13px;
+    line-height: 21px;
+    color: #666666;
+    font-family: "Arial", sans-serif;
+    margin-top: 10px;
+    display: block;
 }
 .col1 a:hover,
 .col2 a:hover,
