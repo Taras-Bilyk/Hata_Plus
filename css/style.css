@@ -46,6 +46,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
+    flex-wrap: wrap;
 }
 .menu a{
     transition: all 0.2s ease;
@@ -89,8 +90,9 @@ a.instagram:hover{
     background-position: -12px -21px;
 }
 .contact_info{
-    padding: 20px 0;
+    padding: 20px 10px;
     transition: all 0.2s ease;
+    justify-content: center;
 }
 .contact_info img{
     margin-right: 10px;
@@ -140,6 +142,7 @@ a.instagram:hover{
 .phones p,
 .messengers p{
     margin: 10px 0;
+    padding-left: 50px;
 }
 .messengers a{
     font-size: 16px;
@@ -148,6 +151,9 @@ a.instagram:hover{
 }
 .skype{
     text-decoration: none;
+}
+.cta{
+    margin-left: 20px;
 }
 .cta a{
     display: inline-block;
