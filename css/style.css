@@ -219,14 +219,14 @@ a.instagram:hover{
     font-weight: 700;
     font-family: "Roboto Slab";
     margin-top: 10px;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 .text{
     font-size: 14px;
     line-height: 24px;
     color: #666;
     font-family: "Arial";
-    padding: 0 10px;
+    padding: 0 20px;
 }
 .about{
     font-size: 14px;
@@ -234,7 +234,7 @@ a.instagram:hover{
     color: #fd8300;
     font-weight: bold;
     font-family: "Arial";
-    padding: 0 10px;
+    padding: 0 20px;
 }
 .about:hover{
     text-decoration: none;
@@ -509,7 +509,8 @@ figcaption{
     top: 41px;
     left: -10px;
     z-index: 1;
-    width: 300px;
+    /* width: 300px; */
+    width: 100vw;
 }
 .b_m_a{
     transition: all 0.2s ease;
@@ -519,15 +520,16 @@ figcaption{
     color: #b1b1d2;
     text-decoration: none;
     display: block;
+    margin-left: 10px;
 }
 .b_m_a:hover{
     color: #fd8300;
     text-shadow: 0 0 1px #fd8300;
 }
-.b_f{
+/* .b_f{
     display: flex;
     justify-content: start;
-}
+} */
 .b_col1{
     margin-left: 20px;
 }
@@ -627,6 +629,7 @@ figcaption{
     }
     .category_menu{
         width: 100vw;
+        margin: 0 20px;
     }
 }
 @media screen and (max-width: 380px){
@@ -637,5 +640,15 @@ figcaption{
 @media screen and (max-width: 720px){
     .cols{
         justify-content: center;
+    }
+}
+@media screen and (max-width: 900px){
+    figcaption{
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width: 424px){
+    .col3 ul{
+        padding: 0;
     }
 }
