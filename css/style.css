@@ -20,6 +20,7 @@ hr{
     margin: 30px 0;
     border: none;
     border-top: 1px solid #e4e4ec;
+    margin-right: 20px;
 }
 a{
     position: relative;
@@ -33,7 +34,7 @@ a{
     padding: 20px 0;
 }
 .header ul{
-    margin: 0 -14px;
+    margin: 0 -10px;
     padding-left: 0;
     list-style: none; 
 }
@@ -219,14 +220,15 @@ a.instagram:hover{
     font-weight: 700;
     font-family: "Roboto Slab";
     margin-top: 10px;
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 .text{
     font-size: 14px;
     line-height: 24px;
     color: #666;
     font-family: "Arial";
-    padding: 0 20px;
+    padding-right: 20px;
+    /* padding: 0 20px; */
 }
 .about{
     font-size: 14px;
@@ -234,7 +236,7 @@ a.instagram:hover{
     color: #fd8300;
     font-weight: bold;
     font-family: "Arial";
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 .about:hover{
     text-decoration: none;
@@ -251,6 +253,7 @@ a.instagram:hover{
 .category_menu{
     margin-top: 0;
     min-width: 219px;
+    /* margin-right: 20px; */
 }
 .nav{
     border-radius: 3px;
@@ -353,11 +356,11 @@ a.instagram:hover{
     font-family: "Roboto Slab";
     margin-top: 30px;
     margin-bottom: 30px;
-    padding: 0 10px;
+    /* padding: 0 10px; */
 }
 figcaption{
     position: relative;
-    margin: 0 5px;
+    /* margin: 0 5px; */
 }
 .a{
     position: absolute;
@@ -372,9 +375,9 @@ figcaption{
 }
 .houses{
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 20px;
     margin-bottom: 0;
     flex-wrap: wrap;
 }
@@ -588,8 +591,14 @@ figcaption{
 .checkbox:checked+.checkbox_l .b_m{
     display: block;
 }
+.montreal{
+    margin: 0 10px;
+}
+.logo_img{
+    width: 200px;
+}
 
-@media screen and (max-width: 680px){
+@media screen and (max-width: 735px){
     .header_nav{
         display: none;
     }
@@ -630,6 +639,7 @@ figcaption{
     .category_menu{
         width: 100vw;
         margin: 0 20px;
+        order: -1;
     }
 }
 @media screen and (max-width: 380px){
@@ -642,13 +652,83 @@ figcaption{
         justify-content: center;
     }
 }
-@media screen and (max-width: 900px){
+/* @media screen and (max-width: 900px){
     figcaption{
         margin: 0 20px;
     }
-}
+} */
 @media screen and (max-width: 424px){
     .col3 ul{
         padding: 0;
+    }
+}
+@media screen and (max-width: 985px){
+    .title{
+        padding: 0 20px;
+    }
+    .text{
+        padding: 0 20px;
+    }
+    .category_menu{
+        margin-right: 20px;
+    }
+    .about{
+        padding: 0 20px;
+    }
+    hr{
+        margin-left: 20px;
+    }
+    .popular{
+        padding: 0 20px;
+    }
+    .houses{
+        margin-left: 20px;
+    }
+    .col1{
+        margin-left: 20px;
+    }
+    .col4{
+        margin-right: 20px;
+    }
+    .header{
+        padding: 20px;
+    }
+    .b_m{
+        left: -30px;
+    }
+}
+@media screen and (max-width: 955px){
+    picture img{
+        width: 30vw;
+    }
+    .houses{
+        justify-content: center;
+    }
+    .montreal{
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 797px){
+    picture img{
+        width: 40vw;
+    }
+    .houses{
+        justify-content: center;
+    }
+    .montreal{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 653px){
+    .montreal{
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 463px){
+    picture img{
+        width: 70vw;
+    }
+    .montreal{
+        margin-left: 0;
     }
 }
