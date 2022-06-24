@@ -92,7 +92,7 @@ a.instagram:hover{
 .contact_info{
     padding: 20px 10px;
     transition: all 0.2s ease;
-    justify-content: center;
+    justify-content: space-between;
 }
 .contact_info img{
     margin-right: 10px;
@@ -219,12 +219,14 @@ a.instagram:hover{
     font-weight: 700;
     font-family: "Roboto Slab";
     margin-top: 10px;
+    padding: 0 10px;
 }
 .text{
     font-size: 14px;
     line-height: 24px;
     color: #666;
     font-family: "Arial";
+    padding: 0 10px;
 }
 .about{
     font-size: 14px;
@@ -232,6 +234,7 @@ a.instagram:hover{
     color: #fd8300;
     font-weight: bold;
     font-family: "Arial";
+    padding: 0 10px;
 }
 .about:hover{
     text-decoration: none;
@@ -242,9 +245,9 @@ a.instagram:hover{
     padding-top: 25px;
     margin-bottom: 10px;
 }
-.content{
+/* .content{
     max-width: 713px;
-}
+} */
 .category_menu{
     margin-top: 0;
     min-width: 219px;
@@ -350,25 +353,30 @@ a.instagram:hover{
     font-family: "Roboto Slab";
     margin-top: 30px;
     margin-bottom: 30px;
+    padding: 0 10px;
 }
 figcaption{
     position: relative;
-    margin: 0;
+    margin: 0 5px;
 }
 .a{
     position: absolute;
     width: 100%;
     height: 100%;
 }
+.messengers p{
+    padding-left: 40px;
+}
 .a:hover~h3{
     text-decoration: underline;
 }
 .houses{
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
+    flex-wrap: wrap;
 }
 .houses_title{
     margin-bottom: 5px;
@@ -377,9 +385,9 @@ figcaption{
 .houses picture{
     vertical-align: bottom;
 }
-.montreal{
+/* .montreal{
     margin: 0 30px;
-}
+} */
 .edmonton h3,
 .montreal h3,
 .calgary h3{
@@ -401,6 +409,7 @@ figcaption{
 .cols{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .cols img{
     margin-right: 10px;
@@ -435,9 +444,11 @@ figcaption{
 }
 .col3 li{
     margin-bottom: 10px;
+    padding-left: 40px;
 }
 .col4 li{
     margin-bottom: 10px;
+    padding-left: 40px;
 }
 .col4 a{
     font-size: 16px;
@@ -466,6 +477,15 @@ figcaption{
 .header_a:hover{
     color: #fd8300;
     text-decoration: underline;
+}
+.col1,
+.col2,
+.col3,
+.col4{
+    margin: 0 5px;
+}
+.col2{
+    margin: 0 45px;
 }
 .footer_all{
     background-color: #ededf5;
@@ -573,5 +593,49 @@ figcaption{
     }
     .burger{
         display: block;
+    }
+}
+@media screen and (max-width: 911px){
+    .contact_info{
+        justify-content: center;
+    }
+    .messengers{
+        margin-left: 10px;
+    }
+    .messengers p{
+        padding-left: 50px;
+    }
+}
+@media screen and (max-width: 911px){
+    .messengers{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 694px){
+    .stick:before{
+        background-color: #fff;
+    }
+}
+@media screen and (max-width: 944px){
+    .messengers{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 653px){
+    .content_all{
+        flex-wrap: wrap;
+    }
+    .category_menu{
+        width: 100vw;
+    }
+}
+@media screen and (max-width: 380px){
+    .prop-title{
+        line-height: 35px;
+    }
+}
+@media screen and (max-width: 720px){
+    .cols{
+        justify-content: center;
     }
 }
