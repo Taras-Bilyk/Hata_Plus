@@ -189,6 +189,8 @@ a.instagram:hover{
     font-family: "Roboto Slab";
     text-align: center;
     text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .prop-text{
     font-size: 14px;
@@ -197,6 +199,8 @@ a.instagram:hover{
     text-align: center;
     padding-top: 12px;
     padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .prop-cost{
     font-size: 24px;
@@ -206,6 +210,8 @@ a.instagram:hover{
     text-align: center;
     padding-bottom: 45px;
     margin-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .prop-cost-n{
     font-size: 40px;
