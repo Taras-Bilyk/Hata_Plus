@@ -579,7 +579,7 @@ figcaption{
     padding-left: 20px;
     padding-right: 0;
     margin-right: 0;
-    margin-left: 0;
+    margin-left: 20px;
     width: 50vw;
 }
 .checkbox:checked+.checkbox_l+.header_nav ul{
@@ -723,7 +723,7 @@ figcaption{
         justify-content: center;
     }
     .montreal{
-        margin-left: 0;
+        margin-left: 10px;
     }
 }
 @media screen and (max-width: 653px){
@@ -736,7 +736,7 @@ figcaption{
         width: 70vw;
     }
     .montreal{
-        margin-left: 0;
+        margin-left: 10px;
     }
 }
 @media screen and (max-width: 307px){
