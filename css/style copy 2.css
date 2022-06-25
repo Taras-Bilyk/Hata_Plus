@@ -511,11 +511,42 @@ figcaption{
     font-family: "Arial";
     padding: 13.5px 0;
 }
+.b_m{
+    position: absolute;
+    background-color: #333;
+    display: none;
+    top: 41px;
+    left: -10px;
+    z-index: 1;
+    /* width: 300px; */
+    width: 100vw;
+}
+.b_m_a{
+    transition: all 0.2s ease;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #b1b1d2;
+    text-decoration: none;
+    display: block;
+    margin-left: 10px;
+}
+.b_m_a:hover{
+    color: #fd8300;
+    text-shadow: 0 0 1px #fd8300;
+}
 /* .b_f{
     display: flex;
     justify-content: start;
 } */
+.b_col1{
+    margin-left: 20px;
+}
+.b_col2{
+    margin-left: 30px;
+}
 .burger{
+    display: none;
     position: relative;
 }
 .checkbox{
@@ -563,27 +594,8 @@ figcaption{
     top: 9px;
 }
 
-.checkbox:checked+.checkbox_l+.header_nav{
-    position: absolute;
+.checkbox:checked+.checkbox_l .b_m{
     display: block;
-    width: 100vw;
-    background-color: #333;
-    top: 40px;
-    left: -30px;
-    padding: 0;
-    margin: 0;
-    z-index: 1;
-}
-.checkbox:checked+.checkbox_l+.header_nav li{
-    display: block;
-    padding-left: 20px;
-    padding-right: 0;
-    margin-right: 0;
-    margin-left: 0;
-    width: 50vw;
-}
-.checkbox:checked+.checkbox_l+.header_nav ul{
-    width: 100vw;
 }
 .montreal{
     margin: 0 10px;
@@ -592,25 +604,12 @@ figcaption{
     width: 200px;
 }
 
-.burger .header_nav{
-    display: block;
-}
-.burger label{
-    display: none;
-}
-.checkbox{
-    display: none;
-}
-
-
 @media screen and (max-width: 735px){
-    .burger .header_nav{
+    .header_nav{
         display: none;
     }
-    .burger label{
+    .burger{
         display: block;
-        padding-right: 20px;
-        padding-bottom: 20px;
     }
 }
 @media screen and (max-width: 911px){
@@ -631,7 +630,7 @@ figcaption{
 }
 @media screen and (max-width: 694px){
     .stick:before{
-        display: none;
+        background-color: #fff;
     }
 }
 @media screen and (max-width: 944px){
@@ -742,31 +741,5 @@ figcaption{
 @media screen and (max-width: 307px){
     .col2 ul{
         padding-top: 0;
-    }
-}
-@media screen and (min-width: 735px){
-    .burger .header_nav{
-        display: block;
-    }
-}
-
-@media screen and (min-width: 985px){
-    .stick:before{
-        right: -25px;
-    }
-}
-@media screen and (max-width: 747px){
-    .cols{
-        justify-content: center;
-    }
-    .col3{
-        margin-right: 20px;
-    }
-}
-
-@media screen and (max-width: 455px){
-    .col3 ul{
-        padding-top: 0;
-        padding-bottom: 0;
     }
 }
