@@ -12,25 +12,34 @@
     <header>
         <div class="header">
             <div class="wrapper flex-between">
-                <nav>
-                    <ul class="menu">
-                        <li>
-                            <a href="index.html">Головна</a>
-                        </li>
-                         <li>
-                            <a href="#">Про компанію</a>
-                        </li>
-                        <li>
-                            <a href="#">Наші будівлі</a>
-                        </li>
-                        <li>
-                            <a href="#">Акції</a>
-                        </li>
-                        <li>
-                            <a href="contacts.html">Контакти</a>
-                        </li> 
-                    </ul>
-                </nav>
+                <div class="burger">
+                    <input type="checkbox" id="check" class="checkbox">
+                    <label for="check" class="checkbox_l">
+                        <span class="span1"></span>
+                        <span class="span2"></span>
+                        <span class="span3"></span>
+                    </label>
+                    <nav class="header_nav">
+                        <ul class="menu">
+                            <li>
+                                <a href="index.html">Головна</a>
+                            </li>
+                             <li>
+                                <a href="#">Про компанію</a>
+                            </li>
+                            <li>
+                                <a href="price.html">Наші будівлі</a>
+                                
+                            </li>
+                            <li>
+                                <a href="#">Акції</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
                 <nav>
                     <ul class="social">
                         <li><a href="#" class="fb"></a></li>
@@ -45,7 +54,7 @@
                 <a href="index.html">
                     <picture>
                         <source srcset="images/logo.webp" type="image/webp">
-                        <img src="images/logo.png" alt="logo">
+                        <img src="images/logo.png" alt="logo" class="logo_img">
                     </picture>
                 </a>
             </div>
