@@ -367,6 +367,7 @@ a.instagram:hover{
     justify-content: space-between;
     margin-top: 14px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 .button_and_ckeckbutton p{
     font-size: 13px;
@@ -693,11 +694,11 @@ a.skype{
         padding-top: 0;
     }
 }
-@media screen and (max-width: 725px){
+/* @media screen and (max-width: 725px){
     .konsultacia{
         margin-left: 50px;
     }
-}
+} */
 /* @media screen and (max-width: 501px){
     .konsultacia{
         margin-right: 138px;
@@ -720,5 +721,10 @@ a.skype{
     }
     .inputs{
         width: 90vw;
+    }
+}
+@media screen and (max-width: 461px){
+    .contacts{
+        justify-content: left;
     }
 }
