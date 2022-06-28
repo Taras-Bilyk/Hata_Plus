@@ -6,31 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Хата Плюс купити котедж, хату, контакти. Будівельна компанія</title>
     <link rel="stylesheet" href="css/contacts-style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="header">
             <div class="wrapper flex-between">
-                <nav>
-                    <ul class="menu">
-                        <li>
-                            <a href="index.html">Головна</a>
-                        </li>
-                         <li>
-                            <a href="#">Про компанію</a>
-                        </li>
-                        <li>
-                            <a href="price.html">Наші будівлі</a>
-                        </li>
-                        <li>
-                            <a href="#">Акції</a>
-                        </li>
-                        <li>
-                            <a href="contacts.html">Контакти</a>
-                        </li> 
-                    </ul>
-                </nav>
-                <nav>
+                <div class="burger">
+                    <input type="checkbox" id="check" class="checkbox">
+                    <label for="check" class="checkbox_l">
+                        <span class="span1"></span>
+                        <span class="span2"></span>
+                        <span class="span3"></span>
+                    </label>
+                        <nav class="header_nav">
+                            <ul class="menu">
+                                <li>
+                                    <a href="index.html">Головна</a>
+                                </li>
+                                <li>
+                                    <a href="#">Про компанію</a>
+                                </li>
+                                <li>
+                                    <a href="price.html">Наші будівлі</a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="#">Акції</a>
+                                </li>
+                                <li>
+                                    <a href="contacts.html">Контакти</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                     <ul class="social">
                         <li><a href="#" class="fb"></a></li>
                         <li><a href="#" class="twitter"></a></li>
@@ -44,7 +54,7 @@
                 <a href="index.html">
                     <picture>
                         <source srcset="images/logo.webp" type="image/webp">
-                        <img src="images/logo.png" alt="logo">
+                        <img src="images/logo.png" alt="logo" class="logo_img">
                     </picture>
                 </a>
             </div>

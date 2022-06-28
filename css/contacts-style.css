@@ -78,6 +78,8 @@ a.instagram:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
 }
 .menu a{
     transition: all 0.2s ease;
@@ -92,7 +94,7 @@ a.instagram:hover{
     text-shadow: 0 0 1px #fd8300;
 }
 .contact_info{
-    padding: 20px 0;
+    padding: 20px 10px;
     transition: all 0.2s ease;
 }
 .contact_info img{
@@ -108,6 +110,7 @@ a.instagram:hover{
 .phones p,
 .messengers p{
     margin: 10px 0;
+    padding-left: 50px;
 }
 .messengers a{
     font-size: 16px;
@@ -239,6 +242,7 @@ a.instagram:hover{
 .map_and_inputs{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .inputs{
     width: 450px;
@@ -318,6 +322,7 @@ a.instagram:hover{
 .map_class iframe{
     border: 0;
     margin-bottom: 40px;
+    margin-right: 10px;
 }
 .send{
     font-size: 14px;
@@ -335,6 +340,7 @@ a.instagram:hover{
     border-color: #fd8300;
     border: 2px solid #fd8300;
     transition: all 0.3s ease;
+    margin-right: 20px;
 }
 .send:hover{
     cursor: pointer;
@@ -403,6 +409,7 @@ a.instagram:hover{
 .cols{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .cols img{
     margin-right: 10px;
@@ -454,7 +461,264 @@ a.skype{
 }
 .col3 li{
     margin-bottom: 10px;
+    padding-left: 40px;
 }
 .col4 li{
     margin-bottom: 10px;
+    padding-left: 40px;
+}
+
+
+.burger{
+    position: relative;
+}
+.checkbox{
+    visibility: hidden;
+    position: absolute;
+}
+.checkbox_l{
+    padding-right: 20px;
+}
+.span1,
+.span2,
+.span3{
+    position: absolute;
+}
+.span1{
+    background-color: #fff;
+    top: 0;
+    width: 20px;
+    height: 2px;
+    transition: 0.3s all ease;
+}
+.span2{
+    background-color: #fff;
+    width: 20px;
+    height: 2px;
+    top: 7px;
+}
+.span3{
+    background-color: #fff;
+    width: 20px;
+    height: 2px;
+    top: 14px;
+    transition: 0.3s all ease;
+
+}
+.checkbox:checked+.checkbox_l .span1{
+    transform: rotate(45deg);
+    top: 9px;
+}
+.checkbox:checked+.checkbox_l .span2{
+    display: none;
+}
+.checkbox:checked+.checkbox_l .span3{
+    transform: rotate(-45deg);
+    top: 9px;
+}
+.logo_img{
+    width: 200px;
+}
+.burger .header_nav{
+    display: block;
+}
+.burger label{
+    display: none;
+}
+.checkbox{
+    display: none;
+}
+.logo_img{
+    width: 200px;
+}
+.messengers p{
+    padding-left: 40px;
+}
+.cta{
+    margin-left: 20px;
+}
+.col1,
+.col2,
+.col3,
+.col4{
+    margin: 0 5px;
+}
+.col2{
+    margin: 0 45px;
+}
+.contacts{
+    flex-wrap: wrap;
+}
+.ofice{
+    margin-right: 10px;
+}
+.konsultacia{
+    margin: 0 10px;
+}
+.rekvizity{
+    margin-left: 10px;
+}
+
+@media screen and  (max-width: 735px){
+    .checkbox:checked+.checkbox_l+.header_nav{
+        position: absolute;
+        display: block;
+        width: 100vw;
+        background-color: #333;
+        top: 40px;
+        left: -30px;
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+    }
+    .checkbox:checked+.checkbox_l+.header_nav li{
+        display: block;
+        padding-left: 20px;
+        padding-right: 0;
+        margin-right: 0;
+        margin-left: 20px;
+        width: 50vw;
+    }
+    .checkbox:checked+.checkbox_l+.header_nav ul{
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 735px){
+    .burger .header_nav{
+        display: none;
+    }
+    .burger label{
+        display: block;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    .contacts{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 911px){
+    .contact_info{
+        justify-content: center;
+    }
+    .messengers{
+        margin-left: 10px;
+    }
+    .messengers p{
+        padding-left: 50px;
+    }
+}
+@media screen and (max-width: 911px){
+    .messengers{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 694px){
+    .stick:before{
+        display: none;
+    }
+}
+@media screen and (max-width: 944px){
+    .messengers{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 424px){
+    .col3 ul{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 985px){
+    .title{
+        padding: 0 20px;
+    }
+    /* .text{
+        padding: 0 20px;
+    } */
+    .category_menu{
+        margin-right: 20px;
+    }
+    .about{
+        padding: 0 20px;
+    }
+    hr{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .col1{
+        margin-left: 20px;
+    }
+    .col4{
+        margin-right: 20px;
+    }
+    .header{
+        padding: 20px;
+    }
+    .b_m{
+        left: -30px;
+    }
+    .contacty{
+        padding: 0 20px;
+    }
+    .contacts{
+        padding: 0 20px;
+    }
+    .map_and_inputs{
+        padding: 0 20px;
+    }
+}
+@media screen and (min-width: 985px){
+    .stick:before{
+        right: -25px;
+    }
+}
+@media screen and (max-width: 747px){
+    .cols{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 747px){
+    .col3 {
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 455px){
+    .col3 ul{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width: 307px){
+    .col2 ul{
+        padding-top: 0;
+    }
+}
+@media screen and (max-width: 725px){
+    .konsultacia{
+        margin-left: 50px;
+    }
+}
+/* @media screen and (max-width: 501px){
+    .konsultacia{
+        margin-right: 138px;
+    }
+} */
+@media screen and (max-width: 959px){
+    .map_and_inputs{
+        justify-content: center;
+    }
+    .map_class iframe{
+        width: 70vw;
+    }
+    .inputs{
+        width: 70vw;
+    }
+}
+@media screen and (max-width: 500px){
+    .map_class iframe{
+        width: 90vw;
+    }
+    .inputs{
+        width: 90vw;
+    }
 }
