@@ -728,3 +728,22 @@ a.skype{
         justify-content: left;
     }
 }
+@media screen and (max-width: 621px){
+    .button_and_ckeckbutton div:last-child label{
+        margin-right: 0;
+        /* padding-right: 0; */
+    }
+    /* .send{
+        margin-right: 70px;
+    } */
+}
+@media screen and (max-width: 725px){
+    .contacty{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 461px){
+    .contacty{
+        text-align: left;
+    }
+}
